@@ -48,7 +48,7 @@ Log Analyzer demonstrates the usage of a variety of Spark features, including:
  - Streaming data
  - Directory polling for reading log files.
  - Sliding window calculations and cumulative state update, using the window() and
-   updateStateByKey() methods (what is the class?).
+   updateStateByKey() methods.
  - Spark transformations like map(), filter()
  - Spark computations like reduce() and so on.
 
