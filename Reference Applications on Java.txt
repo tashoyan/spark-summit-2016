@@ -62,6 +62,7 @@ Additionally, the guidebook demonstrates the following Spark features:
    directory on a distributed filesystem.
 
 Slide 7
+<TODO: Discuss: Should we advertise Scala advantages? Spark guys know them. >
 Scala is one of the most loved and top paying technologies. Spark specialists are
 paid even higher. Java is neither among most loved technologies nor among top
 paying technologies, but businesses can often get done what they need to with
