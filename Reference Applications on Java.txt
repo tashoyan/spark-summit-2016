@@ -53,14 +53,13 @@ Log Analyzer demonstrates the usage of a variety of Spark features, including:
  - Spark computations like reduce() and so on.
 
 Slide 6
-Chapters 1-3 of the guidebook demonstrate the usage of the Spark SQL API,
-including:
- - How to use Dataset and DataFrame
- - How to execute SQL queries over structured data. 
+Additionally, the guidebook demonstrates the following Spark features:
+ - Spark SQL API usage: how to use Dataset and DataFrame, how to execute SQL queries over
+   structured data.
  - There are good DRY guidelines, including reusing existing code with bulk and
    streaming computations written as Java 8 lambda expressions. 
- - Obtaining results from Spark, including writing an RDS to a directory on a
-   distributed filesystem.
+ - Obtaining results from Spark, including writing a Resilient Distributed Dataset to a
+   directory on a distributed filesystem.
 
 Slide 7
 Scala is one of the most loved and top paying technologies. Spark specialists are
