@@ -17,7 +17,7 @@ versions of Spark Reference Applications is an important driver that enables man
 enterprises to begin to use Spark without embarking on a huge learning curve.
 
 Slide 2
-Currently, only the Log Analyzer application has been ported to Java. Log Analyzer
+Currently, only the Log Analyzer application has a Java implementation. Log Analyzer
 is written on Java 8 and works with Spark 2.0. Because Spark is written in a
 functional programming style, older versions of Java are more difficult to work
 with. The other reference applications, such as Twitter Language Classifier and
