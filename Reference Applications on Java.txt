@@ -1,0 +1,67 @@
+Slide 1
+I would like to talk a bit about Java implementations of Databricks Reference
+Applications for Spark.
+First, why do we need Java implementations of these applications? We have them
+already on Scala. Obviously, because Java is one of the most widely used
+programming languages. On this chart - it is taken from a Stack Overflow survey -
+you can see a list of most popular technologies. Predictably, Java is in this
+list, and it is not a surprise that we don't find Scala among most popular
+programming languages. Many commercial software is implemented on Java. Many
+software companies have Java programmers among their employees. And how many of
+them have Scala programmers? Not so many, I believe. So we see a natural barrier
+that prevents many companies from start using Spark. That is why Spark already has
+Java API. And this is why we need Java implementations of Reference Applications
+for Spark. In my opinion, Java versions of Reference Applications is a driver that
+enables many enterprises start using Spark with what they have right now.
+
+Slide 2
+So, what we have right now. Actually not so much. Only Log Analyzer application
+has Java implementation. Other applications like Twitter Language Classifier and
+Weather Time Series are available on Scala only today. Log Analyzer is written on
+Java 8 and works with Spark 2.0. This does not mean that it is impossible to use
+older Java versions with Spark; however, the code will be cumbersome and difficult
+to maintain. Apparently, this is because Spark heavily relies on functional programming.
+
+Slide 3
+Log Analyzer application is a guidebook accompanied with code examples. Chapters
+1-3 give information on how to use basic Spark features - computations, data
+manipulations. Chapter 4 combines knowledge from previous 3 chapters to assemble
+Log Analyzer application. Log Analyzer takes Apache web server log files on its
+input and produces some statistics on the web server usage. It is a simple but
+fully functional application; you can use it as a starting point to implement your
+commercial enterprise software with Spark written on Java.
+
+Slide 4
+What kind of statistics it produces? Statistics on request size: minimal, maximal
+and average request size. Counts of different response codes. Clients accessed
+this server for more than 10 times. Top 10 popular endpoints on this server. The
+application takes real-time data as input by polling a directory for new log
+files. Log analyzer calculates statistics over sliding windows as well as total
+statistics for the total running time.
+
+Slide 5
+What Spark features Log Analyzer uses? Spark Streaming along with directory
+polling to consume input log files. Sliding window calculations and cumulative
+state update: methods window() and updateStateByKey(). Finally Log Analyzer uses
+Spark transformations like map(), filter() and computations like reduce() and so
+on.
+
+Slide 6
+We can learn some other Spark features from Chapters 1-3. Spark SQL API: how to
+use Dataset, DataFrame, how to execute SQL queries over structured data in Spark.
+There are good guidelines on how to "do not repeat yourself" - reuse existing code
+with bulk and streaming computations using Java 8 lambda expressions. Finally,
+there are some examples on how to get data out of Spark, for example write an
+entire Resilient Distributed Dataset to a directory on a distributed filesystem.
+
+Slide 7
+To conclude, let me show two more charts from the same Stack Overflow survey: most
+loved and top paying technologies. We see Scala in both lists. We also see that
+Spark specialists have rich rewards. A disappointing surprise: there is no Java
+neither among most loved technologies nor among top paying technologies. We can
+assume that many Java programmers would love to write Scala and use Spark, but
+they have to stay where they are. For example, their employers ask them to
+maintain some legacy Java code. I believe Java implementations of Reference
+Applications make such guys less frustrated. Thanks to these applications, they
+can start using Spark easier and become richer and happier.
+That's all. Thank you.
