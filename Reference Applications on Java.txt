@@ -63,7 +63,7 @@ Additionally, the guidebook demonstrates the following Spark features:
 
 Slide 7
 Scala is one of the most loved and top paying technologies. Spark specialists are
-paid even highe. Java is neither among most loved technologies nor among top
+paid even higher. Java is neither among most loved technologies nor among top
 paying technologies, but businesses can often get done what they need to with
 Java. More advanced requirements will require the full usage of the Spark API, and
 the only language that can fully exercise the Spark API is Scala. The 80/20 rule
