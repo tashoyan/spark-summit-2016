@@ -11,7 +11,7 @@ software companies employ Java programmers.
 
 Scala is less popular, in part because it is much more difficult to master. So we
 see a natural barrier that prevents many companies from using Spark. Spark has
-Java API, which is less capable than the Spark API, but is more accessible. This
+Java API, which is less capable than the Scala API, but is more accessible. This
 is why we need Java implementations of Reference Applications for Spark: Java
 versions of Spark Reference Applications is an important driver that enables many
 enterprises to begin to use Spark without embarking on a huge learning curve.
